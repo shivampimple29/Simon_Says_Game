@@ -47,8 +47,12 @@ body {
 .nav-logo {
   width: 45px;
   height: 45px;
-  border-radius: 6px;
+  max-width: 45px;
+  max-height: 45px;
+  object-fit: contain;
+  display: block;
 }
+
 
 /* LINKS */
 .nav-links {
