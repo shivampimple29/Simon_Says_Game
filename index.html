@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-brand">Simon Says</div>
+      <ul class="nav-links">
+        <li>
+          <a href="https://github.com/shivampimple29" target="_blank"
+            ><i class="fa-brands fa-github"></i>GitHub</a
+          >
+        </li>
+        <li>
+          <a href="#" target="_blank"
+            ><i class="fa-solid fa-code-branch"></i>Repo</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/shivam-pimple-894201316"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-linkedin"></i>LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- GAME -->
+    <div class="game-container">
+      <h1>Simon Says</h1>
+
+      <div class="info">
+        <h2 id="highScore">Highest score: 0</h2>
+        <h2>Press any key or tap to start</h2>
+      </div>
+
+      <div class="board">
+        <div class="first_line">
+          <div class="btn red" id="red"></div>
+          <div class="btn cyan" id="cyan"></div>
+        </div>
+
+        <div class="second_line">
+          <div class="btn orange" id="orange"></div>
+          <div class="btn purple" id="purple"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">Made by -<span> Shivam S. Pimple</span></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

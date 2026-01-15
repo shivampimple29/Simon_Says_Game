@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #222 0%, #000 60%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  width: 100%;
+  height: 64px;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
+  color: white;
+  opacity: 0.85;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  font-weight: bold;
+  transition: all 0.15s ease;
+}
+
+/* ICONS */
+.nav-links li a i {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* HOVER */
+.nav-links li a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* ---------- GAME ---------- */
+.game-container {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.info h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.85;
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- GAME BOARD ---------- */
+.board {
+  margin-top: 2rem;
+}
+
+.first_line,
+.second_line {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  margin: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* ---------- COLORS ---------- */
+.red {
+  background: linear-gradient(145deg, #ff4b4b, #c70000);
+}
+
+.cyan {
+  background: linear-gradient(145deg, #00f2ff, #008b91);
+}
+
+.orange {
+  background: linear-gradient(145deg, #ffa94d, #ff7a00);
+}
+
+.purple {
+  background: linear-gradient(145deg, #b97cff, #6a00ff);
+}
+
+/* ---------- FLASH EFFECTS ---------- */
+.flash {
+  filter: brightness(2);
+  box-shadow: 0 0 40px white;
+}
+
+.userFlash {
+  filter: brightness(1.6);
+  box-shadow: 0 0 40px rgba(0, 150, 255, 0.9);
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 0.8rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.footer span {
+  font-weight: bold;
+  opacity: 1;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  /* NAVBAR */
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .nav-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.8rem;
+  }
+
+  .nav-links li a i {
+    font-size: 1.1rem;
+  }
+
+  /* GAME BUTTONS */
+  .btn {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: 0.8rem;
+    border-radius: 1.3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-links li a {
+    font-size: 0;
+  }
+
+  .nav-links li a i {
+    font-size: 1.4rem;
+  }
+}
+
+
+
