@@ -37,6 +37,19 @@ body {
   letter-spacing: 1px;
 }
 
+/* ---------- NAVBAR LOGO ---------- */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+}
+
 /* LINKS */
 .nav-links {
   list-style: none;
